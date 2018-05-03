@@ -13,7 +13,7 @@ let watsonAssistant = new AssistantV1({ ...credentials
 // console.log(watsonAssistant);
 
 
-export const sendMessage = (msg='', callback) => {
+export const sendMessage = (message, callback) => {
     watsonAssistant.message({
         workspace_id: workSpaceId,
         input: {
